@@ -1,5 +1,3 @@
-# desenvolve-python-basico
-
-Projeto Desenvolve - Bom Despacho
-Programação básica com Python
-PDBD022
+# Projeto Desenvolve - Bom Despacho
+# Programação básica com Python
+# PDBD022
