@@ -1,0 +1,19 @@
+=========================================================
+Introdução ::::::::::::::::::::::::::::::::::::::::::::::
+
+Decidiu-se por implementar o mesmo sistema utilizado no desenvolvimento do Aplicativo da Disciplina de Projetos, ou seja, da empresa Arena Beach, em que deve-se programar um sistema para Gerenciamento de Locação de Quadras de Areia. Porém, diferente do App, aqui o cadastro de reservas é feito pelos operadores do sistema e não pelos usuários/clientes.
+
+=========================================================
+Implementação :::::::::::::::::::::::::::::::::::::::::::
+
+O sistema considera que existem 6 quadras disponíveis para locação, cujos nomes são armazenados em um array simples direto no código.
+
+São funções básicas do sistema o Gerenciamento de Reservas e o Gerenciamento de Usuários, ambas informações salvas em arquivos de texto no formato json.
+
+Com relação ao Gerenciamento de Usuários, em termos de estrutura, as informações são salvas em um dicionário (dict), onde a chave é o nome do usuário e o valor é outro dicionário contendo a senha criptografada e o grupo do usuário (Administrador ou Operador). Fazem parte das Funcionalidades (CRUD): Criar um novo usuário (C), Listar Usuários/Login (R), Editar Usuários (U) e Remover Usuário (D). 
+
+Com relação ao gerenciamento de reservas, as informações também são salvas em um dicionário (dict), sendo que cada dicionário representa uma reserva e contém os detalhes da quadra, horários, responsável, usuário que criou a reserva e se a reserva está confirmada. Fazem parte das Funcionalidades (CRUD): Criar uma nova reserva (C), Listar Reservas (R), Editar Reservas/Confirmar (U) e Remover Reserva (D).
+
+=========================================================
+Conclusão :::::::::::::::::::::::::::::::::::::::::::::::
+A utilização de arquivos ao invés de banco de dados dificulta em muito a gestão dos dados, além disso, a implementação de restrições e verificações também é de difícil execução. Ao contrário da programação web, a utilização de textos para navegação não é muito intuitiva.
